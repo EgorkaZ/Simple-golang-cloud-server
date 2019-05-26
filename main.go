@@ -211,7 +211,7 @@ func server (res http.ResponseWriter, req* http.Request){
 		page := string(buf)
 		if currentDirectory!="./MyDirectory"{
 			page += "<li><a href=\"/home/parentDirectory\">"+
-				"<img src=\"https://www.pngrepo.com/png/213139/170/folder-ui.png\" alt = \"Folder image\"></a><p>..</p></li>"
+				"<img src=\"https://cdn1.imggmi.com/uploads/2019/5/26/c9675a3c3ac273eff867c5b2e97e43a8-full.png\" alt = \"Folder image\"></a><p>..</p></li>"
 		}
 
 		for _, file := range fileStat{
