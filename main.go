@@ -260,13 +260,13 @@ func linkMaker(fileName string) string {
 
 	if ext==""{
 		s = "<li><a href=\"/home/"+fileName+"\">"+
-			"<img src=\"https://www.pngrepo.com/png/213139/170/folder-ui.png\" alt = \"Folder image\"></a><p>" + fileName + "</p>" +
+			"<img src=\"https://cdn1.imggmi.com/uploads/2019/5/26/c9675a3c3ac273eff867c5b2e97e43a8-full.png\" alt = \"Folder image\"></a><p>" + fileName + "</p>" +
 			"<ul class=\"sub\">"
 	} else {
 		if ext=="jpg"||ext=="png"{
 			s = "<li><img src=\"" + fileName
 		} else {
-			s = "<li><img src=FileImage.png "
+			s = "<li><img src=\"https://cdn1.imggmi.com/uploads/2019/5/26/de9d311236c998329e7d7aca889bac0a-full.png\" "
 		}
 		s += "\" alt=\"" +fileName + "\"><p>" +fileName+
 			"</p><ul class = \"sub\">" +
