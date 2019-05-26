@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8">
+     <title lang="ru">Zudin Cloud</title>
+<style>
+body:lang(ru){
+background-color:#DCDCDC;
+    color: black;
+}
+
+body{
+	margin:0px;
+}
+
+img {
+  width: 150px;
+}
+
+.brd {color: white;
+    margin-left:0px;
+    border: 4px double white; /* Параметры границы */
+    background: #000000; /* Цвет фона */
+    padding: 2px; /* Поля вокруг текста */
+    border-radius: 6px;
+}
+
+#upload-container {
+    margin-top:10px;
+    margin-left:10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     width: 250px;
+     height: 250px;
+     outline: 2px dashed #fff200;
+     outline-offset: -12px;
+     background-color: #595959;
+     font-family: 'Segoe UI';
+     color: #fff200;
+}
+
+#upload-container img {
+     width: 0%;
+     margin-bottom: 20px;
+     user-select: none;
+}
+#upload-container label {
+     font-weight: bold;
+}
+
+#upload-container label:hover {
+     cursor: pointer;
+     text-decoration: underline;
+}
+#upload-container div {
+     position: relative;
+     z-index: 10;
+}
+
+#upload-container input[type=file] {
+     width: 0.1px;
+     height: 0.1px;
+     opacity: 0;
+     position: absolute;
+     z-index: -10;
+}
+#upload-container input[type=file]:focus + label {
+     outline: -webkit-focus-ring-color auto 5px;
+}
+.top > li {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 160px;
+}
+
+.sub {
+
+	background : #fff;
+		        
+	width : 120px;
+		        
+	transform-origin : 0 0;
+
+	transform : scaleY(0);
+	transition: .5s ease-in-out;
+
+	position: absolute;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+.top > li:hover .sub{
+
+	transform : scaleY(1);
+
+	box-shadow: 0 0 2px 1px rgba(255, 242, 0, 0.5);
+}
+
+</style>
+</head>
+<title></title>
+<body>
+
+<div style="height:96px; width:100%; background-color:#aaa;"> 
+  <img src="https://pp.userapi.com/c854124/v854124723/3e872/db3AIJrOWX0.jpg" alt="ну, не повезло" id="ohHead" style = "padding-left:30px;  width:160px; heigth:96px;">
+</div>
+
+<p><h3>Your cloud</h3></p>
+
+<form id="upload-container"  enctype = "multipart/form-data" method="POST"  action="/home/">
+                    <div>
+               <input id="file-input" type="file" name="file" multiple>
+               <label for="file-input" id="gg">Choose file</label>
+	<input type="submit" value="Send">
+               <span id="gg"></span>
+          </div>
+     </form>
+
+<form method="POST" action="/home/">
+    <input type="text" name = "DirectoryName"/>
+    <input type="submit" value="Make Directory"/>
+</form>
+
+<nav>
+	<ul class="top">

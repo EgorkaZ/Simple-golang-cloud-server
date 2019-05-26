@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<body style = "margin:0px;">
+<div style="height:96px; width:100%; background-color:#aaa;"> 
+  <img src="https://pp.userapi.com/c854124/v854124723/3e872/db3AIJrOWX0.jpg" alt="ну, не повезло" id="ohHead" style = "padding-left:30px;  width:160px; heigth:96px;">
+</div>
+<h2>Log in</h2>
+<form method="post" action="/login/">
+<table>
+<tbody>
+<tr>
+<td><label for="passwordField">Пароль</label></td>
+<td><input id="passwordField" name="password" type="password" /></td>
+<td><input type="submit" value="Войти" /></td>
+</tr>
+</tbody>
+</table>
+</form>
+
+</body>
+</html>
